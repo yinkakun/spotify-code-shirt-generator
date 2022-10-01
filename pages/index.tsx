@@ -162,7 +162,14 @@ const Home = ({ uri, name, type }: SpotifyLinkData) => {
         <div className="flex gap-40 px-10 text-white  text-opacity-70">
           <span>Built By Yinka</span>
           <span>Beep boop</span>
-          <span>Github Link</span>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className="no-underline"
+            href="https://github.com/yinkakun/spotify-code-shirt-generator"
+          >
+            Github Link
+          </a>
           <span>I love Spotify</span>
           <span>Ping Pong</span>
           <span>Not affiliated with Spotify</span>

@@ -1,5 +1,5 @@
 import { fabric } from 'fabric';
-import { GetStaticProps } from 'next';
+import { GetServerSideProps } from 'next';
 import Marquee from 'react-fast-marquee';
 import { useForm } from 'react-hook-form';
 import { useWindowSize } from 'react-use';
@@ -283,7 +283,7 @@ const Home = ({ uri, name, type }: SpotifyLinkData) => {
 
 export default Home;
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetServerSideProps = async () => {
   const spotifyLink = 'https://open.spotify.com/playlist/75GeX247deNdTX7zdyZDnU';
   const data = await getSpotifyData(spotifyLink);
   const { uri, name, type } = data;
